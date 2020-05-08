@@ -14,15 +14,20 @@ A playground for learning about the Gnome [Vala](https://wiki.gnome.org/Projects
 ## Features
 
 - Wraps the beets ls (list) command
-- Allows opening the file if the -p switch is used in the search
+- Allows opening of the file or directory if the -p switch is used in the search
 
 ## Installation and Build
+
+### Prepare meson build
 
 1. [Clone the SuperGee repository](https://github.com/DannyGB/SuperGee.git)
 1. cd ./src
 1. mkdir ../build
 1. meson ../build && cd ../build
-1. ninja
+
+### Build the project
+
+1. ./build.sh
 
 ## How to use?
 
