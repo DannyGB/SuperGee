@@ -29,7 +29,7 @@ IBeetService CreateBeetService() {
 }
 
 ISearchHandler CreateSearchHandler(IBeetService beetService, Gtk.ListStore treeList) {
-    return new SearchHandler(beetService, treeList);
+    return new SearchHandler(beetService, treeList, 3);
 }
 
 Builder CreateBuilder() {

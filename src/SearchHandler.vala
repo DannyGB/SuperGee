@@ -8,7 +8,7 @@ namespace SuperGee {
         private Gtk.ListStore TreeList { get; set; }
         private int LsMinLength { get; set; }
 
-        public SearchHandler(IBeetService service, Gtk.ListStore treeList, int lsMinLength = 3) {
+        public SearchHandler(IBeetService service, Gtk.ListStore treeList, int lsMinLength) {
             BeetService = service;
             TreeList = treeList;
             LsMinLength = lsMinLength;
