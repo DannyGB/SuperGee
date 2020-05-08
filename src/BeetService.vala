@@ -1,4 +1,5 @@
 using Gee;
+using GLib;
 
 namespace SuperGee {
     
@@ -6,7 +7,7 @@ namespace SuperGee {
 
         private string BEET = "beet";
         private string LS = "ls";
-        private const string PATHSWITCH = "-p";
+        private Regex _pathSwitch = /(-[a-zA-Z]*p[a-zA-Z]*)/;
         private string SearchEntry { get; set; }
 
         public ArrayList<string> ls(string term) 
@@ -38,7 +39,8 @@ namespace SuperGee {
         }
 
         public bool searchTextIncludesPathSwitch() {
-            return SearchEntry.contains(PATHSWITCH);
+            MatchInfo mi;
+            return _pathSwitch.match(SearchEntry, 0, out mi);
         }
 
     }

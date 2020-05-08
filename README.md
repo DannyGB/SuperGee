@@ -1,10 +1,9 @@
-## SuperGee
+## SuperGee (as that is the shortcut I bind it too)
 
 SuperGee is a Vala based UI for the [beets](http://beets.io) music catalogue
 
 ## Motivation
 A playground for learning about the Gnome [Vala](https://wiki.gnome.org/Projects/Vala) programming language
-
  
 ## Built using
 
@@ -29,9 +28,7 @@ A playground for learning about the Gnome [Vala](https://wiki.gnome.org/Projects
 
 1. ./build.sh
 
-## How to use?
-
-To run:
+## How to use
 
 `./SuperG`
 
