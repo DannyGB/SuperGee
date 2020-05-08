@@ -17,6 +17,7 @@ sources = files(
     'ISearchHandler.vala',
     'EntryHandler.vala',
     'IEntryHandler.vala',
-    'Entry.vala')
+    'Entry.vala',
+    '../build/SuperG@exe/resources.c')
 
 executable('SuperG', sources, dependencies: dependencies)

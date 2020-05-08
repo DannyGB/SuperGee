@@ -33,8 +33,7 @@ ISearchHandler CreateSearchHandler(IBeetService beetService, Gtk.ListStore treeL
 }
 
 Builder CreateBuilder() {
-    var builder = new Builder ();
-    builder.add_from_file("../resources/window.ui");
+    var builder = new Builder.from_resource("/window.ui");
 
     return builder;
 }
