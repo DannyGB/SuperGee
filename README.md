@@ -17,6 +17,14 @@ A playground for learning about the Gnome [Vala](https://wiki.gnome.org/Projects
 
 ## Installation and Build
 
+### Install
+
+## Meson
+## Python3 & pip3
+## Ninja (pip install ninja)
+## Gtk3+ (libgtk-3-dev)
+## CMake
+
 ### Prepare meson build
 
 1. [Clone the SuperGee repository](https://github.com/DannyGB/SuperGee.git)
@@ -26,6 +34,7 @@ A playground for learning about the Gnome [Vala](https://wiki.gnome.org/Projects
 
 ### Build the project
 
+1. Create directory build/SuperG@exe
 1. ./build.sh
 
 ## How to use

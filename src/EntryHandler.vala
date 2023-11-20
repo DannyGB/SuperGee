@@ -3,10 +3,10 @@ using Gtk;
 namespace SuperGee { 
     public class EntryHandler : Object, IEntryHandler {
 
-        private IBeetService BeetService { get; set; }
+        private IBeetService BeetService { get; set; }        
 
         public EntryHandler(IBeetService beetService) {
-            BeetService = beetService;
+            BeetService = beetService;            
         }
 
         [CCode (instance_pos = -1)]

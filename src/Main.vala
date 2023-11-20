@@ -11,9 +11,11 @@ int main (string[] args) {
     var builder = CreateBuilder();
     var window = builder.get_object ("window") as Gtk.Window;
     var treeList = builder.get_object("liststore") as Gtk.ListStore;
+    var searchEntry = builder.get_object("searchEntry") as Gtk.SearchEntry;
+    var displayFormatEntry = builder.get_object("displayFormatText") as Gtk.Entry;
     var beetService = CreateBeetService();
-    var searchHandler = CreateSearchHandler(beetService, treeList);
-    var entryHandler = new EntryHandler(beetService);
+    var searchHandler = CreateSearchHandler(beetService, treeList, searchEntry, displayFormatEntry);
+    var entryHandler = new EntryHandler(beetService);    
 
     ConnectSignals(builder, searchHandler, entryHandler);
 
@@ -28,8 +30,8 @@ IBeetService CreateBeetService() {
     return new BeetService();
 }
 
-ISearchHandler CreateSearchHandler(IBeetService beetService, Gtk.ListStore treeList) {
-    return new SearchHandler(beetService, treeList, 3);
+ISearchHandler CreateSearchHandler(IBeetService beetService, Gtk.ListStore treeList, Gtk.SearchEntry searchEntry, Gtk.Entry displayFormatEntry) {
+    return new SearchHandler(beetService, treeList, 3, searchEntry, displayFormatEntry);
 }
 
 Builder CreateBuilder() {
